@@ -1,0 +1,40 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Hamburger</title>
+    <style>
+        img{
+            width:80px;
+        }
+        .content>p {
+           background-color: #eee;
+           font-size: 1.5rem;
+           padding: 10px;
+           width: 300px;
+           text-align: center;
+        }
+          .content {
+            display: none;
+         }
+           #checkbox{
+            display:none;
+        }
+            #checkbox:checked + .content{
+             display: block;
+         }
+            
+    </style>
+<body>
+    <label for="checkbox">
+        <img src="https://tse2.mm.bing.net/th?id=OIP.7uzAlOoy30fEj6TI5DVHeQHaEI&pid=Api&P=0&h=220" alt="">
+    </label>
+    <input type="checkbox" id="checkbox">
+    <div class="content">
+        <p>JAVA</p>
+        <p>PYTHON</p>
+        <p>JAVASCRIPT</p>
+        <p>SQL</p>
+    </div>
+</body>
+</html>

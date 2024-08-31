@@ -1,0 +1,143 @@
+* {
+    box-sizing: border-box;
+  }
+  
+  body {
+    margin: 0;
+    padding: 0;
+    
+  }
+  
+  .parent {
+    display: grid;
+    height: 500px; 
+    width: 600px;
+    margin: auto;
+    margin-top: 50px;
+    border: 10px solid black;
+    background-color: rgb(47, 43, 43);
+    text-align: center;
+    grid-template-columns: repeat(7, 80px);
+    grid-template-rows: repeat(7, 80px);
+    gap: 10px;
+    position: relative;
+    animation: animate-column ease 10s 10 ;
+    overflow: hidden;
+    grid-template-areas: 
+    "a b b c d e e"
+    "f g g g h e e"
+    "f g g g i e e"
+    "f j j j i k l"
+    "m j j j n o l"
+    "m j j j n p q"
+    "r j j j n s q";
+  }
+  
+  .item > img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    overflow: hidden;
+  }
+  .parent > :nth-child(1){
+    grid-area: a;
+  }
+  .parent > :nth-child(2){
+    grid-area: b;
+  }
+  .parent > :nth-child(3){
+    grid-area: c;
+  }
+  .parent > :nth-child(4){
+    grid-area: d;
+  
+  }
+  .parent > :nth-child(5){
+    grid-area: e;
+  
+  }
+  .parent > :nth-child(6){
+    grid-area: f;
+  
+  }
+  .parent > :nth-child(7){
+    grid-area: g;
+  
+  }
+  .parent > :nth-child(8){
+    grid-area: h;
+  
+  }
+  .parent > :nth-child(9){
+    grid-area: i;
+  
+  }
+  .parent > :nth-child(10){
+    grid-area: j;
+  
+  }
+  .parent > :nth-child(11){
+    grid-area: k;
+  
+  }
+  .parent > :nth-child(12){
+    grid-area: l;
+  
+  }
+  .parent > :nth-child(13){
+    grid-area: m;
+  
+  }
+  .parent > :nth-child(14){
+    grid-area: n;
+  
+  }
+  .parent > :nth-child(15){
+    grid-area: o;
+  
+  }
+  .parent > :nth-child(16){
+    grid-area: p;
+  
+  }
+  .parent > :nth-child(17){
+    grid-area: q;
+  
+  }
+  .parent > :nth-child(18){
+    grid-area: r;
+  
+  }
+  .parent > :nth-child(19){
+    grid-area: s;
+  
+  }
+  
+  
+  
+  @keyframes animate-column {
+    0%{
+      grid-template-columns: repeat(7, 40%);
+      grid-template-rows: repeat(7, 40px);
+    }
+    20%{
+      grid-template-columns: 200px 50px 80px 90px 20px 60px 200px ;
+      grid-template-rows: 100px 200px 50px 50px 150px 120px 90px ;
+    }
+    40%{
+      grid-template-columns: 80px 100px 40px 50px 60px 90px 100px ;
+      grid-template-rows: 200px 50px 80px 60px 90px 50px 200px ;
+    }
+    60%{
+      grid-template-columns: 120px 50px 90px 100px 120px 30px 90px ;
+      grid-template-rows: 100px 100px 120px 100px 60px 100px 90px ;
+    }
+    80%{
+      grid-template-columns: 60px 100px 40px 90px 600px 90px 200px ;
+      grid-template-rows: 50px 50px 60px 60px 80px 220px 100px ;
+    }
+    100%{
+      grid-template-columns: 200px 90px 60px 30px 60px 100px 50px ;
+      grid-template-rows: 90px 100px 100px 90px 100px 100px 50px ;
+    }
+  }

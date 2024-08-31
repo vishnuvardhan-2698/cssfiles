@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+     .container{
+        width:800px;
+        height: 600px;
+        border: 2px solid black;
+        margin-left: 160PX;
+        background-color: navy;
+
+     }
+     #ptag{
+        font-weight: bold;
+        position: relative;
+        padding: 30px;
+        word-spacing: 10px;
+        letter-spacing: 10px;
+        /* transition: transform 1s;
+        display: inline-block; */
+       opacity: 0;
+       animation: fall 1s ease-in forwards;
+
+     }
+     @keyframes fall {
+    0% {
+        transform: translateY(-100%);
+        opacity: 10;
+
+    }
+    100% {
+        transform: translateY(0);
+        opacity: 5;
+    }
+     }
+
+     p{
+      display: flex;
+      animation: rotateAnimation 1s ;
+      /* width: 600px; */
+      text-align: center;
+      padding: 0px;
+      font-weight: bold;
+     letter-spacing: 2px;
+      color: white;
+      justify-content: center;
+
+    }
+    #p2tag{
+        animation: rotateAnimation 1s, 0.2s ;
+        padding-top: 150px;
+        width: 800PX;
+    }
+     
+ @keyframes rotateAnimation  {
+      0% {
+        transform: translateY(-100%);
+        transform: rotate(0deg);
+      }
+      100% {
+        
+        transform: rotate(-360deg);
+      }
+    
+    }
+    img{
+        width:200px;
+        height: 200px;
+        position: relative;
+        bottom: 10px;
+        border-radius: 50%;
+        margin-left: 40px;
+    }
+    
+    </style>
+</head>
+<body>
+    <div class="container">
+        <p id="ptag">PROJECT DETAILS</p>
+        <img src="PYTHONICON.jpeg">
+        <img src="JAVA.jpeg">
+        <img src="js.jpeg">
+
+        <p id="p2tag">Lorem ipsum dolor sit amet consectetur adipisicing elit. Recusandae, voluptas quidem nihil eos ea fuga, fugit optio porro repudiandae architecto facilis suscipit, consequuntur cumque dicta sit labore tempora assumenda dolorem.</p>
+    </div>
+</body>
+</html>
